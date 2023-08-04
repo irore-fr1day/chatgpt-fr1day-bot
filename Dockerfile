@@ -7,7 +7,7 @@ ENV PYTHONFAULTHANDLER=1 \
 
 RUN apk --no-cache add ffmpeg
 
-WORKDIR src/app.py
+WORKDIR main.py
 COPY . .
 RUN pip install -r requirements.txt --no-cache-dir
 
